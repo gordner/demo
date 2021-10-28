@@ -1,0 +1,7 @@
+- hosts: websphere
+  gather_facts: min
+  tasks:
+    - name: Message to display the date and time
+      debug:
+        var: ansible.date_time
+
