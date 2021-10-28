@@ -5,3 +5,8 @@
       debug:
         var: ansible.date_time
 
+    - name: Install apache
+      package:
+        name: httpd
+        status: present
+
